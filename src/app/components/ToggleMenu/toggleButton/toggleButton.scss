@@ -1,0 +1,14 @@
+@import '../../../../shared/variables.scss';
+
+.toggle_button{
+   opacity: 0.8;
+   color: $toggle-button-color;
+   
+}
+
+.toggle_button i {
+   font-size: $icon-size-default;
+   cursor: pointer;
+  
+}
+

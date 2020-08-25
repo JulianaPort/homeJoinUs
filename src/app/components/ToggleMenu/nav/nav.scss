@@ -1,0 +1,76 @@
+#menu_nav {
+  display: none;
+}
+
+#menu_nav.show {
+  display: block;
+}
+
+#menu_nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+#menu_nav ul li {
+  font: 1.2rem Montserrat;
+  letter-spacing: 0.1rem;
+  color: #c6c6d4;
+  padding: 2% 20vw;
+  margin: 6vh 18vw;
+  cursor: pointer;
+}
+
+#menu_nav ul li input {
+  background-image: url("../../../../shared/assets/icons/search-solid.svg");
+  background-position: calc(100% - 60%) center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 1em 16px 1em 1em;
+}
+#menu_nav ul li:last-child {
+  margin-bottom: 2vh;
+}
+
+#menu_nav ul li.active {
+  font: Bold 15px/20px Montserrat;
+  color: #5f41b6;
+}
+
+#menu_nav ul li i {
+  font-size: 1.5rem;
+}
+
+#menu_nav ul li:first-child {
+  margin: 0;
+}
+#menu_nav ul li:first-child input {
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#menu_nav ul li:first-child input::-webkit-input-placeholder {
+  color: #c6c6d4;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+#menu_nav ul li:first-child input:not(:placeholder-shown) {
+  background-image: none;
+}
+
+@media (min-width: 770px){
+  #menu_nav {
+    display: block;
+  }
+
+  #menu_nav li:first-child{
+    display: none;
+  }
+
+ 
+}
+

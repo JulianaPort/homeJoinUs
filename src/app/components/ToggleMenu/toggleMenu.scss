@@ -1,0 +1,26 @@
+.toogle_menu > div {
+    display: none;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;        
+}
+
+.toogle_menu > div:nth-child(2){
+    margin-top: 5rem;
+   display: flex;
+   justify-content: center;
+}
+
+@media (min-width: 770px){
+    .toogle_menu > div button {
+        display: none;
+    }
+
+    .toogle_menu > div {       
+        display: flex;
+        justify-content: center;
+    }
+
+   
+    
+}

@@ -1,0 +1,7 @@
+ <svg viewBox="0 0 500 500" role="img" xmlns="http://www.w3.org/2000/svg">
+        <g id="myid">
+        <circle stroke="darkgray" stroke-width="1px" fill="#4723AE"  cx="250" cy="270" r="250"/>
+        <text style="font: bold 30rem sans-serif;" text-anchor="middle" dominant-baseline="central" x="50%" y="56%"
+        fill="#FFEE00">+</text> 
+        </g>     
+      </svg> 

@@ -1,0 +1,225 @@
+@import "../../../shared/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+.home {
+  display: flex;
+  flex-direction: column;
+  background: url("../../../shared/assets/img/home-background.png") no-repeat
+    45% 12%;
+  position: relative;
+}
+
+.home nav {
+  background-color: #ffffff;
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.home nav div:nth-child(2) {
+  display: none;
+}
+
+.home > main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: $default-color 0% 0% no-repeat padding-box;
+  opacity: 0.83;
+  z-index: 1;
+}
+.home > main article * {
+  z-index: 2;
+  position: relative;
+}
+.home .joinUs {
+  width: 70%;
+}
+
+.home > main article > div {
+  padding: 30% 10%;
+}
+
+.home main article div:nth-child(2) {
+  padding: 35% 0%;
+}
+
+.home main article h1 {
+  text-align: left;
+  font: Bold 40px/49px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 9vh;
+}
+
+.home main article p {
+  text-align: left;
+  font: 200 14px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.home #btn_login {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .home {
+    background: url("../../../shared/assets/img/home-background.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .home nav {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  .home nav div:first-child {
+    display: none;
+  }
+  .home nav div:nth-child(2) {
+    background: #ffffff;
+    width: 19rem;
+    box-shadow: 0px 3px 6px #00000042;
+    border-radius: 0 0 3rem 3rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home nav > div label > span {
+    letter-spacing: 2.6px;
+    color: #5f41b6;
+    font: Bold 13px/16px Montserrat;
+  }
+  .home nav > div label > span:nth-child(2) {
+    font: 13px/16px Montserrat;
+  }
+  .toogle_menu > div {
+    margin: 4% 2%;
+  }
+  .home nav nav {
+    margin-top: 2%;
+    width: 100%;
+  }
+  .home #menu_nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: left !important;
+    margin-left: 8%;
+    align-items: center;
+  }
+
+  .home nav nav li {
+    padding: 0 !important;
+    margin: 0 2rem !important;
+  }
+
+  .home nav nav li.active {
+    color: #ffffff !important;
+    font-weight: 300 !important;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .home #menu_nav ul li,  .home #menu_nav ul li.active{
+    font-size: 11px;
+  }
+
+  .home #form {
+    display: none;
+  }
+
+  .home #information {
+    margin: 0 23vw;
+  }
+
+  .home > main article > div {
+    padding: 0;
+  }
+  .home > main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home main article h1,
+  .home main article p {
+    text-align: center;
+  }
+
+  .home #largeIcons {
+    display: flex;
+    // padding: 11vh 0;
+    padding: 4vh 0;
+    justify-content: center;
+  }
+
+  .home #largeIcons section {
+    margin-right: 10%;
+  }
+
+  .home #largeIcons section:last-child {
+    margin-right: 0;
+  }
+
+  .home .joinUs {
+    width: 100%;
+  }
+
+  .home main article h1 {
+    font: Bold 28px/49px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 1vh;
+  }
+  .home main article p {
+    font-size: 12px;
+  }
+  .home #btn_login {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home #btn_login button {
+    padding: 0.6rem 0rem;
+    border-radius: 2rem;
+  }
+  .home #btn_login button {
+    width: 15vw;
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .home #btn_login button.active {
+    background: #ffffff !important;
+    color: $default-color;
+  }
+
+  .home #btn_login button:first-child {
+    margin-left: 5%;
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 1290px) {
+  .home #largeIcons {
+    padding: 10vh 0;
+  }
+  .home #information {
+    margin: 0 33vw;
+  }
+}

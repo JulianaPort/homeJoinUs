@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap%27");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: Montserrat, Arial;
+}
+
+button:focus , input:focus, select:focus{
+  outline: none;
+  
+}
+
+.button_icon {
+  background: transparent !important;
+  border: none;
+}
+
+.button_icon {
+  outline: none !important;
+}

@@ -1,0 +1,122 @@
+@import "../../../../shared/variables.scss";
+
+$placeholder-color: #cdd0d9;
+
+.form-login header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-login header button {
+  padding: 0.6rem 0rem;
+  border-radius: 2rem;
+}
+.form-login button {
+  width: 27vw;
+  border-radius: 1rem;
+  border: 1px solid $default-color;
+  color: $default-color;
+  cursor: pointer;
+}
+
+svg g {
+  fill: $default-color;
+}
+
+svg {
+  height: 36pt;
+  width: 30pt;
+}
+
+button svg {
+  height: 42pt;
+  width: 36pt;
+  z-index: -1 !important;
+}
+
+button #male {
+  padding: 0.4rem 1.5rem !important;
+}
+
+.form-login main {
+  margin: 2rem 0;
+}
+
+.form-login input,
+.form-login select {
+  border-radius: 2rem;
+  border: 1px solid $default-color;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+.form-login select   {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../../../shared/assets/icons/chevron-down-solid.svg");
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 1em 16px 1em 1em;
+  color: $placeholder-color;
+}
+select option:first-child{
+  color:  $placeholder-color;
+}
+
+.form-login select option {
+  background-color: $placeholder-color;
+  color: #000000; 
+}
+
+.form-login section {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.form-login section button {
+  border: none;
+  background: transparent;
+  padding: 2.4rem 0;
+  box-shadow: 0px 6px 12px #0000000d;
+}
+
+.form-login input {
+  background-image: url("../../../../shared/assets/icons/user-regular.svg");
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 1em 16px 1em 1em;
+  color: #000000;
+}
+
+.form-login input:not(:placeholder-shown) {
+  background-image: none;
+}
+// }
+.form-login input::-webkit-input-placeholder {
+  color: $placeholder-color;
+}
+
+
+.btn {
+  padding: 0 !important;
+}
+
+.form-login section#add {
+  padding: 0;
+  margin: 0;
+}
+
+button.active {
+  background-color: $default-color !important;
+  color: #ffffff;
+  svg g {
+    fill: #ffffff;
+  }
+}
+
